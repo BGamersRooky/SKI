@@ -1,0 +1,22 @@
+.content{
+  padding-top: 50px;
+}
+video{
+  display: block;
+  margin: auto;
+}
+#videoteka{
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+
+  height: 50px;
+  width: 150px;
+  
+  font-size: larger;
+}
+label small{
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}

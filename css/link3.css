@@ -1,0 +1,39 @@
+.polje{
+  display: inline-block;
+
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
+
+  margin: 5px 5px 5px 0px;
+
+  border: 1px solid black;
+  user-select: none;
+
+  font-size: x-large;
+}
+.tabela{
+  display: block;
+  margin: auto;
+
+  width: 50%;
+  text-align: center;
+
+  padding-top: 50px;
+}
+#tajmer{
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 20px;
+}
+#start{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+
+  width: 150px;
+  height: 50px;
+
+  text-align: center;
+  font-size: x-large;
+}

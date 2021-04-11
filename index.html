@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SKI - Projekat</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://kit.fontawesome.com/6b3d427563.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div id="okvir">
+
+    <header>
+      <div>
+        <span class="animate">10</span><span class="animate delay-1">/</span><span class="animate delay-2">10</span><span class="animate delay-3"> P</span><span class="animate delay-4">O</span><span class="animate delay-5">E</span><span class="animate delay-6">N</span><span class="animate delay-7">A</span>
+      </div>
+    </header>
+
+    <nav>
+      <div class="navigacija">
+        <div class="navigacija-link"><a href="link1.html">Link 1</a></div>
+        <div class="navigacija-link"><a href="link2.html">Link 2</a></div>
+        <div class="navigacija-link"><a href="link3.html">Link 3</a></div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="podaci">Podaci o studentu: <br><br>
+      Ime i Prezime: Filip Babic <br>
+      Smer: Informacioni Sistemi <br>
+      Broj indexa: IS - 15/18
+      </div>
+    </section>
+    
+    <div id="umotvorine">"Ko mnogo priča, ili sve zna, ili mnogo laže"</div>
+
+  </div>
+
+  <footer>
+    <div class="footer" style="line-height: 100px !important;"><i class="fas fa-copyright"></i> All rights reserved, Filip Babic 2020.</div>
+  </footer>
+
+
+  <script>
+    var a = '\"Ko mnogo priča, ili sve zna, ili mnogo laže\"';
+    var b = '\"Ko laže za tebe, lagaće i protiv tebe\"';
+    var c = '\"Ko drugome jamu kopa, sam u nju upada\"';
+    var d = '\"Ništa nema gore od mutne vode i mutna čoveka\"';
+    var e = '\"U laži su kratke noge\"';
+
+    var pauza = 10000;
+
+    let check = $('#umotvorine');
+
+
+    setInterval(umotvorine, pauza);
+    
+    function umotvorine(){
+        if(check.html() === a){
+          check.fadeOut("slow", function(){
+          check.html(b);
+          check.fadeIn("slow");
+          });
+          //umotvorine();
+        }else if(check.html() === b){
+          check.fadeOut("slow", function(){
+          check.html(c);
+          check.fadeIn("slow");
+          });          
+        }else if(check.html() === c){
+          check.fadeOut("slow", function(){
+          check.html(d);
+          check.fadeIn("slow");
+          });
+          //umotvorine();
+        }else if(check.html() === d){
+          check.fadeOut("slow", function(){
+          check.html(e);
+          check.fadeIn("slow");
+          });
+          //umotvorine();
+        }else if(check.html() === e){
+          check.fadeOut("slow", function(){
+          check.html(a);
+          check.fadeIn("slow");
+          });
+          //umotvorine();
+        }
+    }
+  </script>
+</body>
+</html>
